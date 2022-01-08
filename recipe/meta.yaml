@@ -31,7 +31,7 @@ about:
   home: https://github.com/trungleduc/ipyflex
   license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: A WYSIWYG layout editor for Jupyter widgets
   doc_url: https://ipyflex.readthedocs.io
   dev_url: https://github.com/trungleduc/ipyflex
