@@ -1,5 +1,5 @@
 {% set name = "ipyflex" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9a70226a410bfd035d6271a7093762bc483e9401d387094078e1c2984051c5f7
+  sha256: a4a2a85c32e2cedcc32d3c0bd2e4b0636fc16beea60aae4a1a4f6c24cb86a484
 
 build:
   noarch: python
@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - jupyter-packaging =0.10
+    - jupyter-packaging >=0.12
   run:
     - ipywidgets >=7.6.0
     - python >=3.6
