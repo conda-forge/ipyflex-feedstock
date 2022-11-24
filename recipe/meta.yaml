@@ -1,5 +1,5 @@
 {% set name = "ipyflex" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9a00039d6fe979590f763206cf6b308090f2d46e245f58b026334a0853f8ade9
+  sha256: 312ffc1fd5e19a4222055ff2761c9896c415b3c91e9c5046b637b218c72e857b
 
 build:
   noarch: python
