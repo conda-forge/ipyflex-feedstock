@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 06351d1c928b05e8c16def9f5129385d9a9e704ae71e35eb948564381111ae71
 
 build:
@@ -16,12 +16,15 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
+    - hatchling >=1.5.0
+    - jupyterlab >=4.0.0,<5
+    - hatch-nodejs-version
+    - hatch-jupyter-builder >=0.5
     - pip
-    - jupyter-packaging >=0.12
   run:
-    - ipywidgets >=7.6.0
-    - python >=3.6
+    - python >=3.8
+    - ipywidgets >=8
 
 test:
   imports:
