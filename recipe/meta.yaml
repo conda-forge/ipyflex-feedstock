@@ -11,24 +11,26 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - nodejs
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling >=1.5.0
     - jupyterlab >=4.0.0,<5
     - hatch-nodejs-version
     - hatch-jupyter-builder >=0.5
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - ipywidgets >=8
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ipyflex
 
